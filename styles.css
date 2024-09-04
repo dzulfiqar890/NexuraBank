@@ -1,0 +1,598 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.titik {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 0;
+
+}
+
+/* Header and Hero Shared Background */
+header,
+.hero {
+    background-image: url('Rectangle\ 12.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    /* White text color for contrast */
+    height: 100%;
+}
+
+/* Header Styles */
+header {
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 40px;
+    width: 40px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    /* White text for navigation links */
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #14e68b;
+    /* Light green text on hover */
+}
+
+header .auth-buttons a {
+    color: #fff;
+    /* White text for buttons */
+    margin-left: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header .register-btn {
+    background-color: #0F916D;
+    /* Slightly lighter green */
+}
+
+header .login-btn {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+}
+
+/*bjcsjbcjbsj*/
+
+.babi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.babi.hero-content {
+    flex: 1;
+    padding-right: 20px;
+    max-width: 60%;
+}
+
+.babi .hero-image {
+    flex: 1;
+    max-width: 40%;
+    text-align: right;
+}
+
+.babi .hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.hero .hero-content {
+    flex: 1;
+    padding-right: 20px;
+    max-width: 60%;
+}
+
+.hero .hero-content h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: #fff;
+    /* White text for the main heading */
+}
+
+.hero .hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #E8FFF5;
+    /* Light green for paragraph text */
+}
+
+.hero .cta-button {
+    background-color: #E8FFF5;
+    /* Light green button background */
+    color: #0A7758;
+    /* Dark green text on button */
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero .cta-button:hover {
+    background-color: #0F916D;
+    /* Slightly darker green on hover */
+    color: #fff;
+    /* White text on hover */
+}
+
+.hero .hero-image {
+    flex: 1;
+    text-align: right;
+    max-width: 40%;
+}
+
+.hero .hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Services Section */
+.services {
+    padding: 60px 0;
+    background-color: #F2FFF8;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    color: #0A7758;
+    margin-bottom: 40px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.service-card {
+    text-align: center;
+    flex: 1;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card img {
+    max-width: 80px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 24px;
+    color: #0A7758;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Features Section */
+.features {
+    padding: 60px 0;
+    background-color: #DFFCE7;
+}
+
+.features h2 {
+    font-size: 36px;
+    color: #0A7758;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.feature-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 48%;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-card h3 {
+    font-size: 22px;
+    color: #0A7758;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.feature-card ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.feature-card ul li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Footer Styles */
+footer {
+    background-image: url('moke.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    padding: 50px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .contact-info {
+    flex: 1;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+footer .contact-info p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+footer .contact-info address {
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+footer .contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .social-media img {
+    max-width: 30px;
+    margin-right: 10px;
+}
+
+footer .contact-form {
+    background-color: #E8FFF5;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    margin-left: 20px;
+}
+
+footer .contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #0A7758;
+}
+
+footer .contact-form input,
+footer .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+footer .contact-form button {
+    background-color: #0F916D;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+footer .contact-form button:hover {
+    background-color: #0A7758;
+}
+
+/* Animasi untuk tombol (register, login, CTA button) */
+header .auth-buttons a,
+.hero .cta-button,
+.service-card,
+.feature-card,
+footer .contact-form button {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+header .auth-buttons a:hover,
+.hero .cta-button:hover,
+footer .contact-form button:hover {
+    transform: scale(1.05);
+    background-color: #0A7758; /* Warna berubah menjadi lebih gelap */
+}
+
+/* Animasi untuk kartu layanan dan fitur */
+.service-card:hover,
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Animasi kursor pada semua elemen yang dapat diklik */
+a, button {
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+a:hover, button:hover {
+    color: #E8FFF5; /* Warna teks berubah saat hover */
+}
+
+.login-btn:hover{
+    border: 2px solid#149772; 
+}
+
+.abuabu{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.under{
+    border: 2px solid#0d5742; 
+    background-color: #149772;
+    height: 200px;
+    padding: 20px;
+}
+
+#ins{
+    margin-right: 10px;
+}
+#tiktok{
+    margin-right: 10px;
+}
+
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .log img {
+    max-width: 5%;
+    border-radius: 360px;
+  }
+  
+  .footer-links {
+    display: flex;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px; /* Sesuaikan jarak antar link */
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:last-child {
+    margin-right: 0; /* Menghapus margin dari link terakhir */
+  }
+  
+  .copyright-text {
+    text-align: center;
+    font-size: 0.75em; /* Ukuran font lebih kecil untuk copyright */
+  }
+  
+.footer-links a:hover{
+    color: #063b2c;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    header .auth-buttons {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    header .auth-buttons a {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    header .logo img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero .hero-content {
+        padding-right: 0;
+        max-width: 100%;
+    }
+
+    .hero .hero-image {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .service-cards,
+    .feature-cards {
+        flex-direction: column;
+    }
+
+    .service-card,
+    .feature-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .feature-card {
+        padding: 20px;
+        margin: 10px 0;
+    }
+
+    footer .container {
+        flex-direction: column;
+    }
+
+    footer .contact-info,
+    footer .contact-form {
+        flex: 1;
+        margin: 0;
+    }
+
+    .footer-container,
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links a {
+        margin: 0 0 10px 0;
+    }
+
+    .footer-links {
+        text-align: center;
+    }
+
+    footer .contact-form button {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+/* Extra Small Devices (Phones, 480px and Below) */
+@media screen and (max-width: 480px) {
+    header .logo img {
+        height: 25px;
+        width: 25px;
+    }
+
+    .hero .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero .hero-content p {
+        font-size: 16px;
+    }
+
+    .service-card,
+    .feature-card {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    footer .contact-info p,
+    footer .contact-info address {
+        font-size: 14px;
+    }
+
+    footer .contact-form label,
+    footer .contact-form button {
+        font-size: 16px;
+    }
+
+    footer .contact-form input,
+    footer .contact-form textarea,
+    .footer-links a {
+        font-size: 14px;
+    }
+
+    .copyright-text {
+        font-size: 12px;
+    }
+
+    header .auth-buttons a {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    footer .contact-form button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
