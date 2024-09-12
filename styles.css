@@ -474,7 +474,7 @@ a:hover, button:hover {
         gap: 10px;
     }
 
-    header .auth-buttons a {
+    header .auth-buttons a, .cta-button {
         padding: 10px 15px;
         font-size: 14px;
     }
@@ -586,12 +586,12 @@ a:hover, button:hover {
         font-size: 12px;
     }
 
-    header .auth-buttons a {
+    header .auth-buttons a, .cta-button {
         padding: 8px 12px;
         font-size: 12px;
     }
 
-    footer .contact-form button {
+    footer .contact-form button,  {
         padding: 10px;
         font-size: 14px;
     }
