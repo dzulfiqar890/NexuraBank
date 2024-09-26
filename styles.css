@@ -35,6 +35,7 @@ header,
     background-image: url('Rectangle\ 12.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
     color: #fff;
     /* White text color for contrast */
     height: 100%;
